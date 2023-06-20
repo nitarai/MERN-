@@ -92,10 +92,41 @@
 // console.log(c,a);
 
 //arrays
-const arr =["saab", "volvo", "BMW"];
-//access the first item
-const b = arr[0];
-//access the last item
-const c = arr[arr.length-1];
-console.log(b);
-console.log(c);
+// const arr =["saab", "volvo", "BMW"];
+// //access the first item
+// const b = arr[0];
+// //access the last item
+// const c = arr[arr.length-1];
+// console.log(b);
+// console.log(c);
+
+// console.log(arr.length);
+// console.log(arr.sort());
+// console.log(arr.push("test"));
+// console.log(arr.pop());
+
+// const cars =["saab", "volvo", "BMW", 46, {name: "Alto", company: "suzuki"}];
+// const myFunction =(data)=>{
+//     console.log(data);
+// }
+
+// // ES5
+//  cars.forEach(myFunction);
+
+// // ES6
+// cars.map(d=> console.log(d));// map le vaisakyo ko feri aaudaina 
+
+//  user model
+const user = {
+    firstname : "john",
+    lastname : "doe", 
+    email : "john@gmail.com",
+    address: "gaighat",
+    dob: "2058/02/20",
+    password : "123456",
+    phone : "9818530935",
+};
+
+// user List
+const {password, phone, ...rest} = user;
+console.log({rest});
