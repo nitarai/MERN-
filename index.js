@@ -151,5 +151,12 @@ const user = [
   };
   const newUpperCase = rest.map(myFunction).toString();
   console.log({newUpperCase});
-  
+   
+  const myName =(salutation, name) => {
+    if (salutation === "") {
+        salutation =salutation || "Mr";
+    }
+    console.log(`${salutation} ${name}`);
+  }
 
+myName("","John");
