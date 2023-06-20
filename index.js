@@ -117,16 +117,39 @@
 // cars.map(d=> console.log(d));// map le vaisakyo ko feri aaudaina 
 
 //  user model
-const user = {
-    firstname : "john",
-    lastname : "doe", 
-    email : "john@gmail.com",
-    address: "gaighat",
-    dob: "2058/02/20",
-    password : "123456",
-    phone : "9818530935",
-};
+// const user = {
+//     firstname : "john",
+//     lastname : "doe", 
+//     email : "john@gmail.com",
+//     address: "gaighat",
+//     dob: "2058/02/20",
+//     password : "123456",
+//     phone : "9818530935",
+// };
 
-// user List
-const {password, phone, ...rest} = user;
-console.log({rest});
+// // user List
+// const {password, phone, ...rest} = user;
+// console.log({rest});
+
+const user = [
+    "john",
+    "doe",
+    "john@gmail.com",
+    "gaighat",
+    "2058/02/20",
+    "123456",
+    "9818530935",
+  ];
+  
+  // user Array
+  const [password, phone, ...rest] = user;
+  console.log(rest.toString());
+
+  const myFunction = (data) => {
+    return data.toUpperCase();
+    // console.log("hi there",data);
+  };
+  const newUpperCase = rest.map(myFunction).toString();
+  console.log({newUpperCase});
+  
+
