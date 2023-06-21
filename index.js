@@ -131,32 +131,33 @@
 // const {password, phone, ...rest} = user;
 // console.log({rest});
 
-const user = [
-    "john",
-    "doe",
-    "john@gmail.com",
-    "gaighat",
-    "2058/02/20",
-    "123456",
-    "9818530935",
-  ];
+// const user = [
+//     "john",
+//     "doe",
+//     "john@gmail.com",
+//     "gaighat",
+//     "2058/02/20",
+//     "123456",
+//     "9818530935",
+//   ];
   
-  // user Array
-  const [password, phone, ...rest] = user;
-  console.log(rest.toString());
+//   // user Array
+//   const [password, phone, ...rest] = user;
+//   console.log(rest.toString());
 
-  const myFunction = (data) => {
-    return data.toUpperCase();
-    // console.log("hi there",data);
-  };
-  const newUpperCase = rest.map(myFunction).toString();
-  console.log({newUpperCase});
+//   const myFunction = (data) => {
+//     return data.toUpperCase();
+//     // console.log("hi there",data);
+//   };
+//   const newUpperCase = rest.map(myFunction).toString();
+//   console.log({newUpperCase});
    
-  const myName =(salutation, name) => {
-    if (salutation === "") {
-        salutation =salutation || "Mr";
-    }
-    console.log(`${salutation} ${name}`);
-  }
+//   const myName =(salutation, name) => {
+//     if (salutation === "") {
+//         salutation =salutation || "Mr";
+//     }
+//     console.log(`${salutation} ${name}`);
+//   }
 
-myName("","John");
+// myName("","John");
+
